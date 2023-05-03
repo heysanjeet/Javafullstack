@@ -15,7 +15,7 @@ public class BookController {
 
     @GetMapping
     public ResponseEntity<List<BookDto>> getBooks() {
-        BookDto book = BookDto.builder().tittle("This is my first book").build();
+        BookDto book = BookDto.builder().tittle("This  is my first book").build();
         List<BookDto> books = new ArrayList<>();
         books.add(book);
         return ResponseEntity.ok(books);
